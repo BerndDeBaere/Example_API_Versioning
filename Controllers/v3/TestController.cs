@@ -1,9 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Asp.Versioning;
+using Microsoft.AspNetCore.Mvc;
 
 namespace TestApiVersioning.Controllers.v3;
 
 [ApiController]
-[ApiVersion("3.0")]
+[ApiVersion(3)]
 [Route("v{version:apiVersion}/[controller]")]
 public class TestController: Controller
 {
