@@ -7,10 +7,6 @@ namespace TestApiVersioning.Controllers.v1;
 [Route("v{version:apiVersion}/[controller]")]
 public class TestController: Controller
 {
-    /// <summary>
-    /// Does this work in swagger?
-    /// </summary>
-    /// <returns></returns>
     [HttpGet]
     public IActionResult Get()
     {

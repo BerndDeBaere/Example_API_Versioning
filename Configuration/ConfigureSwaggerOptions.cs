@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc.ApiExplorer;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
@@ -17,7 +16,7 @@ public class ConfigureSwaggerOptions(IApiVersionDescriptionProvider provider) : 
                 CreateVersionInfo(description));
         }
     }
-    
+
     private OpenApiInfo CreateVersionInfo(
         ApiVersionDescription desc)
     {
@@ -35,5 +34,4 @@ public class ConfigureSwaggerOptions(IApiVersionDescriptionProvider provider) : 
 
         return info;
     }
-    
 }
